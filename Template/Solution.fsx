@@ -20,6 +20,11 @@ let readFile fileName =
     with
         ex -> Error $"Could not read file '%s{fileName}': %s{ex.Message}" 
 
+type Input = string seq
+
+let parseInput (input: string seq): Input =
+    input
+
 let part1 input =
     "todo"
 
